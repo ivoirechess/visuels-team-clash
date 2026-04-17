@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivoire Chess — Week-end</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-bg" aria-hidden="true"></div>
+
+  <div class="page-shell shell" id="pageShell">
+    <nav class="top-actions no-capture" aria-label="Navigation week-end">
+      <a href="index.html" class="ghost-btn">← Retour</a>
+      <div class="week-nav-group">
+        <button id="prevWeekBtn" class="ghost-btn" type="button">Week-end précédent</button>
+        <button id="nextWeekBtn" class="ghost-btn" type="button">Week-end suivant</button>
+      </div>
+      <button id="captureToggle" class="accent-btn" type="button">Mode screenshot</button>
+    </nav>
+
+    <main id="weekendRoot" class="weekend-page" aria-live="polite"></main>
+
+    <p class="capture-hint no-capture">
+      Astuce : activez le mode screenshot pour recentrer la composition et masquer les contrôles.
+    </p>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

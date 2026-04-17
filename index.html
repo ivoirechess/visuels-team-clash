@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivoire Chess — Affiches du Tournoi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="home-body">
+  <div class="app-bg" aria-hidden="true"></div>
+
+  <main class="home-page shell">
+    <header class="home-header premium-card">
+      <p class="eyebrow">Ivoire Chess</p>
+      <h1>Affiches premium — Tournoi par équipes</h1>
+      <p class="home-subtitle">
+        6 week-ends, 6 affiches prêtes pour capture. Design sombre, lisible et optimisé screenshot 16:9.
+      </p>
+    </header>
+
+    <section class="week-grid premium-card" aria-labelledby="week-grid-title">
+      <div class="section-topline">
+        <h2 id="week-grid-title">Sélection du week-end</h2>
+        <a class="text-link" href="weekend.html?week=1">Ouvrir le premier match</a>
+      </div>
+      <div id="weekCards" class="week-cards"></div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
